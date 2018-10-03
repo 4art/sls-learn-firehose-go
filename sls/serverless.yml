@@ -76,7 +76,7 @@ resources:
             Fn::Join:
             - ''
             - - 'arn:aws:s3:::'
-              - Ref: S3BucketKinesisfirehosesimpleplaygroundbucket
+              - Ref: HelloLambdaFunction
           BufferingHints:
             IntervalInSeconds: "60"
             SizeInMBs: "1"
