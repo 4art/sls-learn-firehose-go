@@ -17,6 +17,19 @@ func ListBuckets() ([]string, error) {
 	return sBuckets, e
 }
 
+func IsBucketExist(bucket string) bool {
+	bucketNames, e := ListBuckets()
+	if e != nil {
+		panic(e)
+	}
+	for _, e := range bucketNames {
+		if e == bucket {
+			return true
+		}
+	}
+	return false
+}
+
 func createService() *s3.S3 {
 	sess, err := session.NewSession()
 	if err != nil {
