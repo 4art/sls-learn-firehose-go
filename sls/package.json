@@ -1,0 +1,13 @@
+{
+  "name": "metraf-firehose",
+  "description": "",
+  "version": "0.1.0",
+  "dependencies": {
+    "npm": "^6.2.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.28.0",
+    "serverless-plugin-git-variables": "^3.0.0",
+    "serverless-pseudo-parameters": "^2.1.0"
+  }
+}
