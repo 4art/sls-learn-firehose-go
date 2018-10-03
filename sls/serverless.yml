@@ -84,6 +84,10 @@ resources:
           Prefix: "raw/"
           RoleARN:
             Fn::GetAtt: [ FirehoseToS3Role, Arn ]
+    FirefoseS3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.serviceId}-hello
     FirehoseToS3Role:
       Type: AWS::IAM::Role
       Properties:
