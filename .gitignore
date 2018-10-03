@@ -1,5 +1,7 @@
 # Serverless directories
 sls/.serverless
+sls/node_modules
+sls/package-lock.json
 .idea/
 
 # golang output binary directory
